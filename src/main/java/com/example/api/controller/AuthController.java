@@ -34,6 +34,7 @@ public class AuthController {
 
         return "User created successfully";
     }
+
     @PostMapping("/login")
     public String login(@RequestBody AuthRequest request) {
         UserEntity user = userRepository.findByUsername(request.getUsername())
