@@ -69,28 +69,3 @@ public class AuthController {
 
 
 
-
-//public class AuthController {
-//
-//    private final JwtService jwtService;
-//
-//    @PostMapping("/login")
-//    public String login(@RequestBody AuthRequest request) {
-//
-//        if (request.getUsername().equals("admin") && request.getPassword().equals("123")) {
-//            return jwtService.generateToken(request.getUsername());
-//        }
-//
-//        if (request.getUsername().equals("user") && request.getPassword().equals("123")) {
-//            return jwtService.generateToken("user");
-//        }
-//
-//        if (request.getUsername().equals("approver") && request.getPassword().equals("123")) {
-//            return jwtService.generateToken("approver");
-//        }
-//        throw new RuntimeException("Invalid credentials");
-//    }
-//
-//
-//    }
-
