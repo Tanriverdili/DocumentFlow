@@ -19,33 +19,100 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-integration'
-    implementation 'org.springframework.boot:spring-boot-starter-mail'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     implementation 'org.springframework.boot:spring-boot-starter-validation'
-    implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.2'
+    implementation 'org.springframework.boot:spring-boot-starter-integration'
+    implementation 'org.springframework.integration:spring-integration-mail'
     implementation 'org.springframework.integration:spring-integration-http'
     implementation 'org.springframework.integration:spring-integration-jpa'
-    implementation 'org.springframework.integration:spring-integration-mail'
-    implementation 'org.springframework.integration:spring-integration-stomp'
     implementation 'org.springframework.integration:spring-integration-websocket'
-    implementation 'org.springframework.security:spring-security-messaging'
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.2'
+    implementation 'org.springframework.integration:spring-integration-core'
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'org.postgresql:postgresql'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-mail-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-validation-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-websocket-test'
+    runtimeOnly 'org.postgresql:postgresql'
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.integration:spring-integration-test'
     testCompileOnly 'org.projectlombok:lombok'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testAnnotationProcessor 'org.projectlombok:lombok'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //  implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+  //  implementation 'org.springframework.boot:spring-boot-starter-integration'
+  //  implementation 'org.springframework.boot:spring-boot-starter-mail'
+  //  implementation 'org.springframework.integration:spring-integration-mail'
+ //   implementation 'org.springframework.boot:spring-boot-starter-security'
+ //   implementation 'org.springframework.boot:spring-boot-starter-validation'
+ //   implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+ //   implementation 'org.springframework.boot:spring-boot-starter-websocket'
+ //   implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:3.0.2'
+  //  implementation 'org.springframework.integration:spring-integration-http'
+  //  implementation 'org.springframework.integration:spring-integration-jpa'
+ //   implementation 'org.springframework.integration:spring-integration-mail'
+ //   implementation 'org.springframework.integration:spring-integration-stomp'
+ //   implementation 'org.springframework.integration:spring-integration-websocket'
+//    implementation 'org.springframework.security:spring-security-messaging'
+ //   compileOnly 'org.projectlombok:lombok'
+ //   runtimeOnly 'org.postgresql:postgresql'
+ //   annotationProcessor 'org.projectlombok:lombok'
+   // testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
+ //   testImplementation 'org.springframework.boot:spring-boot-starter-mail-test'
+  //  testImplementation 'org.springframework.boot:spring-boot-starter-security-test'
+  //  testImplementation 'org.springframework.boot:spring-boot-starter-validation-test'
+  //  testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+   // testImplementation 'org.springframework.boot:spring-boot-starter-websocket-test'
+  //  testImplementation 'org.springframework.integration:spring-integration-test'
+  //  testCompileOnly 'org.projectlombok:lombok'
+  //  testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+  //  testAnnotationProcessor 'org.projectlombok:lombok'
+
+
+
 }
 
 tasks.named('test') {

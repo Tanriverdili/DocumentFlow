@@ -1,0 +1,9 @@
+services:
+  db:
+    container_name: postgres_db
+    image: postgres:16
+
+  app:
+    build: .
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres_db:5432/postgres
